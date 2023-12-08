@@ -1,8 +1,11 @@
 # protorepo
-This repository contains inventory of Proto files in different folders, each folder representing a hypothetical service offered by a company.
-Having a repository for Proto files separates definition and implementation which allows us to manage changes more effectively.
+This repository contains an inventory of Proto files in different folders, each folder representing a hypothetical service offered by a company.
 
-GRPC server use the generate code for a particular programming language from this repository to implement the API contract and clients use the generated code as the interface to make RPC request to the server using its URL.
+Having a repository for Proto files separates definition and implementation, allowing us to manage changes more effectively.
+
+GRPC server uses the generated code for a particular programming language from this repository to implement the API contract. Clients use the generated code as the interface to make RPC requests to the server using its URL.
+
+Here is a sample server implementing `Greet` service from this repository: https://github.com/nirdosh17/grpc-go-service
 
 # Service and proto files
 Each folder represents a service. For example, there is a folder called `greet` where you will see:
